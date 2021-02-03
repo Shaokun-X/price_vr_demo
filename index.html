@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo</title>
+
+    <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+    <script src="js/stl-loader.js"></script>
+</head>
+
+<body>
+    <script>
+        // The script must be placed before a-scene
+    </script>
+    <a-scene>
+
+        <a-assets>
+            <a-asset-item response-type="arraybuffer" id="heart" src="asset/heart.stl"></a-asset-item>
+        </a-assets>
+        <a-entity stl-model="src: #heart" scale="0.1 0.1 0.1" rotation="-90 0 0" position="0 0 -6"
+            material="color: red; roughness: 0.1; metalness: 0"></a-entity>
+    </a-scene>
+
+</body>
+
+</html>
